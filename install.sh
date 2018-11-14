@@ -1,4 +1,4 @@
-cd /www/
+cd /data/
 [ -e chain33 ] && cd chain33 && ./chain33-cli net info && exit 0
 apt-get update
 apt-get install wget -y
