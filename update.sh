@@ -8,7 +8,7 @@ tar zxf bityuan_ubuntu.tgz
 cd chain33
 [ -e chain33 ] && install chain33 /data/chain33/chain33
 [ -e chain33-cli ] && install chain33-cli /data/chain33/chain33-cli
-[ -e chain33.toml ] && install chain33.toml /data/chain33/chain33.toml
+[ -e bityuan.toml ] && install chain33.toml /data/chain33/bityuan.toml
 [ -e chain33.conf ] && supervisorctl reload
 supervisorctl restart chain33
 sleep 15
