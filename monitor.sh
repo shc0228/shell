@@ -1,13 +1,12 @@
 
-#!/bin/sh
-while true
+#!/bin/bash
+
+while [ 1 ]
 do
-        process=`ps -ef| grep chain33 | grep -v grep`; 
-        
-        if [ "$process" == "" ]; then
-                sleep 1;
-                echo "process 不存在,开始执行";
-                nohup ./chain33 &
-        fi
-        sleep 1000
+    procID=`pgrep chain33`
+    if [ "" == "$procID" ];
+    then
+        nohup ./chain33 &
+    fi
+    usleep 1000
 done
