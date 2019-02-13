@@ -9,5 +9,5 @@ do
                 echo "process 不存在,开始执行";
                 nohup ./chain33 &;
         fi
-        sleep 1000;
+        sleep 1000
 done
