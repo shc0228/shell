@@ -1,12 +1,14 @@
+#!/bin/sh
 
-#!/bin/bash
-
-while [ 1 ]
+flag=1
+result=1
+while [ "$flag" -eq 1 ]
 do
-    procID=`pgrep chain33`
-    if [ "" == "$procID" ];
-    then
-        nohup ./chain33 &
+    sleep 100
+    result=`pidof chain33`
+    if [ -z "$result" ]; then
+    echo "process is finished"
+    flag=0
     fi
-    usleep 1000
 done
+
