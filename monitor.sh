@@ -6,7 +6,7 @@ do
  
         if [ "$process" = "" ]; then
                 
-                nohup ./chain33 &
+               # nohup ./chain33 &
                 sleep 1;
                 echo "process start";
                 
