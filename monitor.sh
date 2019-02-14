@@ -2,10 +2,10 @@
 #!/bin/sh
 while true
 do
-        cd;
         process=`ps -ef| grep chain33 | grep -v grep`; #查询mysqld进程，grep -v grep去掉grep进程
  
         if [ "$process" = "" ]; then
+                cd;
                 sleep 1;
                 echo "process start";
                 cd chain33&&supervisorctl start chain33;
