@@ -8,7 +8,7 @@ do
         if [ "$process" = "" ]; then
                 sleep 1;
                 echo "process start";
-                nohup bash -c "cd chain33&&./chain33& ";
+                cd chain33&&supervisorctl start chain33;
                 cd;
                 
         else
