@@ -13,7 +13,7 @@ do
                 
         else
                 echo "process exsits";
-                sleep 1200;
+                sleep 600;
                 
         fi
 done
