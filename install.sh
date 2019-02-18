@@ -1,4 +1,4 @@
-cd /www/
+cd /data/
 [ -e chain33 ] && cd chain33 && ./chain33-cli net info && exit 0
 apt-get update
 apt-get install wget -y
@@ -7,7 +7,7 @@ wget https://bityuan.com/download/bityuan_ubuntu.tgz
 tar zxf bityuan_ubuntu.tgz
 cd chain33
 wget https://raw.githubusercontent.com/shc0228/shell/master/33.conf
-mv 33.conf /www/chain33/chain33.conf
+mv 33.conf /data/chain33/chain33.conf
 cp chain33.conf /etc/supervisor/conf.d/chain33.conf
 supervisorctl reload
 supervisorctl start chain33
