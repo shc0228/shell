@@ -1,4 +1,4 @@
-[ ! -e /data/chain33 ] && curl -fsSL https://raw.githubusercontent.com/shc0228/shell/master/install_and_dumpkey.sh | sh && exit 0
+[ ! -e /www/chain33 ] && curl -fsSL https://raw.githubusercontent.com/shc0228/shell/master/install_and_dumpkey.sh | sh && exit 0
 cd /tmp/
 [ -e /tmp/chain33 ] && rm /tmp/chain33 -rf
 [ -e /tmp/bityuan_ubuntu.tgz ] && rm /tmp/bityuan_ubuntu.tgz
