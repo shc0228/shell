@@ -14,5 +14,5 @@ cd chain33
 [ -e chain33.conf ] && install chain33.conf /etc/supervisor/conf.d/chain33.conf && supervisorctl reload
 supervisorctl restart chain33
 sleep 15
-cd /data/chain33
+cd /www/chain33
 ./chain33-cli net info
