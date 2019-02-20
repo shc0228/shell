@@ -11,7 +11,7 @@ cd chain33
 [ -e chain33.toml ] && install chain33.toml /www/chain33/chain33.toml
 [ -e bityuan.toml ] && install bityuan.toml /www/chain33/bityuan.toml
 [ -e bityuan.lite.toml ] && install bityuan.lite.toml /www/chain33/bityuan.lite.toml
-[ -e chain33.conf ] && install chain33.conf /etc/supervisor/conf.d/chain33.conf && supervisorctl reload
+[ -e chain33.conf ] && supervisorctl reload
 supervisorctl restart chain33
 sleep 15
 cd /www/chain33
