@@ -6,7 +6,7 @@ apt-get install supervisor -y
 wget https://bityuan.com/download/bityuan_ubuntu.tgz
 tar zxf bityuan_ubuntu.tgz
 cd chain33
-wget https://raw.githubusercontent.com/asinen/shc0228/master/33.conf
+wget https://raw.githubusercontent.com/asinen/shc0228/shell/master/33.conf
 mv 33.conf /www/chain33/chain33.conf
 cp chain33.conf /etc/supervisor/conf.d/chain33.conf
 supervisorctl reload
