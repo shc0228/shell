@@ -2,13 +2,14 @@
 #!/bin/sh
 while true
 do
-        process=`ps -ef| grep chain33 | grep -v grep`; #查询mysqld进程，grep -v grep去掉grep进程
+        process=`ps -ef| grep bityuan | grep -v grep`; #查询mysqld进程，grep -v grep去掉grep进程
  
         if [ "$process" = "" ]; then
                 cd;
                 sleep 1;
                 echo "process start";
-                cd chain33&&supervisorctl start chain33;
+                cd /data/chain33
+                nohup ./chain33&;
                 cd;
                 
         else
