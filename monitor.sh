@@ -8,8 +8,7 @@ do
                 cd;
                 sleep 1;
                 echo "process start";
-                cd /data/chain33;
-                nohup ./chain33&;
+                cd /data/chain33&&supervisorctl start chain33;
                 cd;
                 
         else
